@@ -6,6 +6,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 6fr;
+    height: 100vh;
 }
 
 nav {
@@ -18,7 +19,7 @@ nav {
     border-left: 5px solid rgb(163, 162, 162);
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    justify-content: space-between;
 }
 
 .nav-ul {
@@ -268,4 +269,23 @@ nav {
 
 .color-text {
     color: rgb(48, 156, 156);
+}
+
+/* FOOTER */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid rgb(182, 180, 180);
+}
+
+.footer-nav-container {
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+}
+
+.date {
+    padding: 15px;
 }
