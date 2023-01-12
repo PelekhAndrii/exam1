@@ -174,3 +174,98 @@ nav {
 .blue {
     background-color: blue;
 }
+
+/* LARGE-CARD */
+
+.large-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.large-card {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px ;
+}
+
+.large-card-header {
+    position: relative;
+    padding: 10px;
+    top: -30px;
+    box-shadow: 2px 2px 5px gray;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.large-card-nav {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tag {
+    text-decoration: none;
+}
+
+.tag-orange:hover {
+    background-color: rgb(252, 178, 40);
+}
+
+.tag-blue:hover {
+    background-color: rgb(59, 59, 250);
+}
+
+.table {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    margin: 10px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.left-align {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gap {
+    display: flex;
+    gap: 20px;
+}
+
+.spusok {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.table2-text {
+    font-size: 20px;
+}
+
+.color-text {
+    color: rgb(48, 156, 156);
+}
