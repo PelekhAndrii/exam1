@@ -88,7 +88,7 @@ nav {
 
 .information {
     margin: 0;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: lighter;
     text-align: right;
 }
@@ -112,6 +112,53 @@ nav {
     gap: 20px;
     color: gray;
 }
+
+/* MEDIUM-CARD */
+
+.medium-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.medium-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px ;
+    gap: 20px;
+}
+
+.medium-logo-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    top: -30px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.medium-logo {
+    width: 100%;
+}
+
+.information-medium {
+    margin: 0;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.card-info {
+    font-size: 20px;
+    color: gray;
+    margin: 0;
+}
+
 
 /* COLORS */
 
