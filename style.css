@@ -24,6 +24,11 @@ nav {
     width: 30px;
 }
 
+.content-title {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .content {
     background-color: gainsboro;
     padding: 20px;
@@ -43,6 +48,8 @@ nav {
     align-items: center;
     gap: 10px;
     padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .navigation:hover {
@@ -67,7 +74,8 @@ nav {
 
 .nav-title {
     padding: 20px;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* SMALL-CARD */
@@ -323,6 +331,11 @@ footer {
         display: none;
     }
 
+    .content-title {
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -349,6 +362,11 @@ footer {
 @media (min-width: 600px) and (max-width: 800px) {
     nav {
         display: none;
+    }
+
+    .content-title {
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .container {
@@ -383,6 +401,11 @@ footer {
 @media (max-width: 600px) {
     nav {
         display: none;
+    }
+
+    .content-title {
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .container {
