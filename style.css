@@ -9,6 +9,11 @@
     height: 100vh;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 nav {
     background-color: gainsboro;
 }
@@ -361,6 +366,7 @@ footer {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
@@ -518,4 +524,30 @@ textarea {
 .row-6 {
     display: flex;
     justify-content: flex-end;
+}
+
+.medium-card1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px ;
+    gap: 20px;
+}
+
+.large-card1 {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px ;
+}
+@media (max-width: 1256px) {
+    .profile-container {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 20px;
+    }
+
+    .large-card1 {
+        grid-row: 2;
+    }
 }
