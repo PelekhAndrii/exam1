@@ -64,6 +64,9 @@ h1 {
 .card3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
 }
 
 .card1-title {
@@ -100,6 +103,111 @@ h1 {
     height: 100%;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr;
+    margin-bottom: 40px;
+}
+
+.photo1 {
+    height: 300px;
+    background-image: url("./images/gaslamp.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+
+.photo2 {
+    background-size: cover;
+    height: 300px;
+    background-image: url("./images/fire.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.photo3 {
+    background-size: cover;
+    height: 300px;
+    background-image: url("./images/photographer.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.photo4 {
+    background-size: cover;
+    height: 300px;
+    background-image: url("./images/testimg.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.gallery-title {
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+}
+
+.photo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    display: none;
+}
+
+.photo1 .photo-info:hover {
+    display: block;
+}
+
+.features-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feature-icon {
+    width: 50px;
+}
+
+.bor1 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.bor2 {
+    border-bottom: 1px solid black;
+}
+.bor3 {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.bor4 {
+    border-right: 1px solid black;
+}
+/* .bor5 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+} */
+.bor6 {
+    border-left: 1px solid black;
+}
+
+
 @media (max-width: 1200px) {
     .card1 {
         display: grid;
@@ -123,5 +231,43 @@ h1 {
         align-items: center;
         justify-content: center;
         border-bottom: 1px solid black;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 40px;
+    }
+
+    .photo3, .photo4 {
+        display: none;
+    }
+
+    .features {
+        width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bor3 {
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: none;
+    }
+    
+    .bor4 {
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+
+    .bor5 {
+        border-right: 1px solid black;
+    }
+
+    .bor6 {
+        border-left: none;
     }
 }
