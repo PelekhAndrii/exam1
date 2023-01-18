@@ -20,8 +20,12 @@
                 <a href="" class="page">Features</a>
                 <a href="" class="page">Write to us</a>
             </nav>
-            <div class="icons">
-                <div class="icons"></div>
+            <div class="headr-icons">
+                <a href=""><img src="./images/twitter.png" alt="" class="icons"></a>
+                <a href=""><img src="./images/facebook.png" alt="" class="icons"></a>
+                <a href=""><img src="./images/instagram.png" alt="" class="icons"></a>
+                <a href=""><img src="./images/youtube.png" alt="" class="icons"></a>
+                <a href=""><img src="./images/gmail.png" alt="" class="icons"></a>
             </div>
         </header>
         <main>
@@ -135,9 +139,57 @@
                 </div>
             </div>
             <h2 class="gallery-title">Write to us</h2>
+            <div class="write-to-us">
+                <div class="row1">
+                    <div class="col1"><label for="name">Name:</label><input class="inp-text" type="text" id="name"></div>
+                    <div class="col1"><label for="name">Email:</label><input class="inp-text" type="email" id="name"></div>
+                    <div class="col1"><label for="name">Phone:</label><input class="inp-text" type="tel" id="name"></div>
+                </div>
+                <div class="row2">
+                    <p>Contact me via:</p>
+                    <div class="box">
+                        <input type="radio" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="box">
+                        <input type="radio" id="phone">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="box">
+                        <input type="radio" id="telegram">
+                        <label for="telegram">Telegram</label>
+                    </div>
+                </div>
+                <div class="row3">
+                    <label for="topic">Topic:</label>
+                    <select class="inp-text" name="topic" id="topic">
+                        <option value="red">Red</option>
+                        <option value="green">green</option>
+                        <option value="yellow">yellow</option>
+                    </select>
+                </div>
+                <div class="row4">
+                    <label for="massage">Massage:</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                </div>
+                <div class="row5">
+                    <div class="box">
+                        <input type="checkbox" id="human">
+                        <label for="human">I am a human</label>
+                    </div>
+                    <a href="" class="btn">SEND</a>
+                </div>
+            </div>
         </main>
         <footer>
-
+            <div class="footer-icons-container">
+                <a href=""><div class="icons-bg"><img class="footer-icon" src="./images/twitter.png" alt=""></div></a>
+                <a href=""><div class="icons-bg"><img class="footer-icon" src="./images/facebook.png" alt=""></div></a>
+                <a href=""><div class="icons-bg"><img class="footer-icon" src="./images/instagram.png" alt=""></div></a>
+                <a href=""><div class="icons-bg"><img class="footer-icon" src="./images/youtube.png" alt=""></div></a>
+                <a href=""><div class="icons-bg"><img class="footer-icon" src="./images/gmail.png" alt=""></div></a>
+            </div>
+            <p class="footerText">© UNTITLED 2022</p>
         </footer>
     </div>
 </body>
