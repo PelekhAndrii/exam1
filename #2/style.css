@@ -22,6 +22,18 @@ nav {
     align-items: center;
 }
 
+.burger-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 h1 {
     margin-left: 30px;
 }
@@ -164,12 +176,9 @@ h1 {
     justify-content: center;
     gap: 20px;
     color: white;
-    display: none;
 }
 
-.photo1 .photo-info:hover {
-    display: block;
-}
+
 
 .features-card {
     display: flex;
@@ -217,12 +226,13 @@ h1 {
 }
 
 .write-to-us {
-    max-width: 850px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
 }
 
 .row1 {
@@ -364,4 +374,116 @@ footer {
     .bor6 {
         border-left: none;
     }
+}
+
+@media (max-width: 850px) {
+    .card1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+
+    .main-img {
+        grid-row: 1;
+    }
+
+    .headr-icons {
+        display: none;
+    }
+    
+    .card2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+    
+    .card3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;
+    }
+
+    .photo3, .photo4, .photo2 {
+        display: none;
+    }
+
+    .features {
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bor1 {
+        border-right: none;
+    }
+
+    .bor3 {
+        border-right: none;
+        border-bottom: 1px solid black;
+        border-left: none;
+    }
+    
+    .bor4 {
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+
+    .bor5 {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-icon {
+        display: inline;
+    }
+
+    .bor6 {
+        border-left: none;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .features {
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-icon {
+        display: inline;
+    }
+
+
 }
