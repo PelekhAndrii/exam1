@@ -144,6 +144,7 @@ h1 {
     background-size: cover;
     display: flex;
     align-items: center;
+    position: relative;
 
 }
 
@@ -153,6 +154,7 @@ h1 {
     background-image: url("./images/fire.jpg");
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .photo3 {
@@ -161,6 +163,7 @@ h1 {
     background-image: url("./images/photographer.jpg");
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .photo4 {
@@ -169,6 +172,7 @@ h1 {
     background-image: url("./images/testimg.jpg");
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .gallery-title {
@@ -184,9 +188,32 @@ h1 {
     justify-content: center;
     gap: 20px;
     color: white;
+    display: none;
 }
 
+.photo-bg {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
 
+.photo:hover .photo-bg {
+    display: block;
+    opacity: 40%;
+    position: absolute;
+}
+
+.photo:hover .photo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
 
 .features-card {
     display: flex;
